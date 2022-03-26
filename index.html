@@ -11,13 +11,13 @@
                 object-fit: cover;
             }
         </style>
-        <script>
-            document.getElementById('intro-video').play();
-        </script>
     </head>
     <body>
-        <video id="intro-video" autoplay loop controls plays-inline>
-            <source src="static/1034069366-hd.mov" type="video/mov"/> 
-        </video>
+        <video id="video" src="static/1034069366-hd.mov" muted autoplay loop/>
     </body>
+    <script>
+        window.addEventListener('load', () => {
+            video.play();
+        });
+    </script>
 </html>
