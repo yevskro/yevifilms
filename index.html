@@ -8,10 +8,14 @@
             video {
                 width: 100vw;
                 height: 100vh;
+                object-fit: cover;
             }
         </style>
+        <script>
+            document.getElementById('intro-video').play();
+        </script>
     </head>
     <body>
-        <video src="static/1034069366-hd.mov" type="video/mov" autoplay loop controls/>
+        <video id="intro-video" src="static/1034069366-hd.mov" type="video/mov" autoplay loop controls/>
     </body>
 </html>
